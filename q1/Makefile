@@ -11,7 +11,7 @@ isbench-dbg: $(SRC)
 	$(CC) -o $@ $(SRC) -g $(CFLAGS) $(INCLUDES)
 
 prime: $(PRIME)
-	$(CC) -o $@ $(PRIME) -O0 $(PRIME) -lm
+	$(CC) -o $@ $(PRIME) -O0 $(PRIME_INC) -lm
 
 clean:
-	rm -rf *.o isbench isbench-dbg isbench-dbg.dSYM	
+	rm -rf *.o isbench isbench-dbg isbench-dbg.dSYM prime
